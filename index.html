@@ -35,9 +35,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Reuse parent site design tokens + component system -->
-  <link rel="stylesheet" href="./parent-styles.css?v=2">
+  <link rel="stylesheet" href="./parent-styles.css?v=7">
   <!-- Churches-specific additions layered on top -->
-  <link rel="stylesheet" href="./styles.css?v=2">
+  <link rel="stylesheet" href="./styles.css?v=7">
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
   <!-- Schema.org — AccountingService for Google Ads / Quality Score -->
@@ -112,7 +112,7 @@
     <div class="locality-bar" aria-label="Trusted by churches nationwide">
       <div class="container locality-inner">
         <span class="locality-pin" aria-hidden="true">✦</span>
-        <span>Trusted by churches across the U.S. — <strong>Heirloom Church</strong> · <strong>Kingdom City Church</strong> · and more</span>
+        <span>Trusted by churches across the U.S. — <strong>Heirloom Church</strong> · <strong>Kingdom City Church</strong> · <strong>New Hope Maui</strong> · and more</span>
       </div>
     </div>
 
@@ -131,7 +131,7 @@
                 <div class="liquid-backdrop"></div>
                 <span class="liquid-content">Book Your 15-Min Intro Call</span>
               </a>
-              <a href="#estimate" class="button button-secondary" data-cta="estimate-hero">Get Your Instant Estimate</a>
+              <a href="https://turnkeycfo.github.io/Instant_Estimate/" target="_blank" rel="noreferrer" class="button button-estimate-glow" data-cta="estimate-hero"><span>Get Your Instant Estimate</span></a>
             </div>
 
             <!-- Founder strip (moved below CTAs — credibility layer, not hero gate) -->
@@ -158,10 +158,7 @@
             <div class="booking-shell hero-booking-shell">
               <div class="booking-copy">
                 <h2 class="booking-title">Book your 15-minute intro call.</h2>
-                <p>Pick a time right here. Want a ballpark first? Scroll down to the instant estimate — takes about 60 seconds.</p>
-                <div class="booking-actions">
-                  <a href="#estimate" class="button button-secondary" data-cta="estimate-booking">Open Instant Estimate</a>
-                </div>
+                <p>Pick a time right here — no prep required.</p>
               </div>
               <div class="calendly-inline-widget" data-url="https://calendly.com/ricky-turnkeycfo/15min-intro-call?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=00e676" style="min-width:320px;height:700px;"></div>
             </div>
@@ -201,7 +198,10 @@
               </div>
             </div>
             <div class="live-link-row">
-              <p>Every church we serve gets a custom financial dashboard built around their fund structure — not a generic chart of accounts. We'll walk you through a live example on the intro call.</p>
+              <p>Every church we serve gets a custom financial dashboard built around their fund structure — not a generic chart of accounts.</p>
+              <a href="https://ricky11west.github.io/ABC-Church/" target="_blank" rel="noreferrer" class="button button-dashboard-preview" data-cta="dashboard-example">
+                <span>See a Live Church Dashboard →</span>
+              </a>
             </div>
           </div>
         </div>
@@ -400,29 +400,13 @@
             </details>
             <details class="faq-item">
               <summary>How much does this cost?</summary>
-              <p>Our instant estimate takes about 60 seconds and gives you a real price range based on your church size, staff count, and complexity — not a generic number. Scroll down to use it.</p>
+              <p>Our instant estimate takes about 60 seconds and gives you a real price range based on your church size, staff count, and complexity — not a generic number. Tap any "Instant Estimate" button on the page to open it.</p>
             </details>
           </div>
         </div>
       </section>
 
-      <!-- ═══════════ 8. INSTANT ESTIMATE (PRIMARY CTA #2) ═══════════ -->
-      <section class="section section-estimate" id="estimate">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>Get your <span class="shimmer-text">instant estimate.</span></h2>
-            <p>Takes about 60 seconds. You'll get a real monthly range for your church — not "contact us for pricing."</p>
-            <div class="estimate-cta-wrap reveal">
-              <a href="https://turnkeycfo.github.io/Instant_Estimate/" target="_blank" rel="noreferrer" class="button button-estimate-glow" data-cta="estimate-section">
-                <span>Open Instant Estimate →</span>
-              </a>
-              <p class="estimate-cta-note">Opens in a new tab · no email required to see your price range</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══════════ 9. FINAL BOOK CTA ═══════════ -->
+      <!-- ═══════════ 8. FINAL BOOK CTA ═══════════ -->
       <section class="section section-book" id="book">
         <div class="container">
           <div class="section-head reveal">
@@ -466,8 +450,8 @@
 
   <!-- Sticky mobile CTA bar — always-visible conversion path on small screens -->
   <div class="mobile-sticky-cta" aria-label="Quick actions">
+    <a href="https://turnkeycfo.github.io/Instant_Estimate/" target="_blank" rel="noreferrer" class="mobile-sticky-cta-secondary" data-cta="estimate-sticky">Instant Estimate</a>
     <a href="https://calendly.com/ricky-turnkeycfo/15min-intro-call" class="mobile-sticky-cta-primary" target="_blank" rel="noreferrer" data-cta="book-call-sticky">Book Call</a>
-    <a href="#estimate" class="mobile-sticky-cta-secondary" data-cta="estimate-sticky">Instant Estimate</a>
   </div>
 
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
